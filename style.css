@@ -1,5 +1,38 @@
-td,
-th,
-table {
+* {
+  font-family: Arial, sans-serif;
+}
+td th table {
   border: 1px solid black;
+  text-align: center;
+}
+table,th,td{border: 1px solid gray;
+  color:darkred;
+  text-align: center;
+
+}
+
+body{
+    background-color: rgba(6, 31, 255, 0);
+}
+button{
+    background-color: lightgrey;
+}
+h2{
+    background-color:lightgrey;
+    padding: 20px;
+  font-size: 25px;
+}
+
+body header{
+background-color: lightblue;
+text-align: center
+}
+main{
+text-align: center;
+}
+
+
+footer {
+background-color: lightblue;
+text-align: center
 }
