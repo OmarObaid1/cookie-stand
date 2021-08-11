@@ -16,9 +16,40 @@
         </ul>
     </header>
     <main>
+        
         <div id="contanir"></div>
     </main>
-    <footer></footer>
+    <footer>
+        <form action="" id="myForm">
+            <fieldset>
+              <legend>Add a New Store</legend>
+        
+              <label for="shopName">shopName: </label>
+              <input type="text" name="shopName"/> 
+            
+              </br> </br>
+        
+              <label for="minimumNumberOfCustomers">minimumNumberOfCustomers: </label>
+              <input type="number" name="minimumNumberOfCustomers"/> 
+            
+              </br> </br>
+
+        
+              <label for="maximumNumberOfCustomers">maximumNumberOfCustomers: </label>
+              <input type="number" name="maximumNumberOfCustomers"/> 
+              
+              </br> </br>
+        
+              <label for="avgPerCustHourly">avgPerCustHourly</label>
+              <input type="number" name="avgPerCustHourly" step="0.1"/> 
+              
+              </br> </br>
+        
+              <input type="submit" value="add new shop"/>
+            </fieldset>
+          </form>
+         </br>
+    </footer>
     <script src="app.js"></script>
 </body>
 </html>

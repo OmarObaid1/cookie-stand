@@ -77,6 +77,8 @@ function createTableHeader() {
 
 createTableHeader();
 
+
+
 function createTableFooter(){
     let totalDaily =0;
     let total =0;
@@ -97,6 +99,7 @@ function createTableFooter(){
 
 
     }
+
      
 let thEl10 = document.createElement('th');
     trEl.appendChild(thEl10);
@@ -106,7 +109,27 @@ let thEl70 = document.createElement('th');
     trEl.appendChild(thEl70);
     thEl70.textContent = total;
 }
-// createTableFooter();
+let myform = document.getElementById('myForm');
+myform.addEventListener('submit',addShop);
+function addShop(event){
+    event.preventDefault();
+
+    let shopName = event.target.shopName.value;
+    let minimumNumberOfCustomers = event.target.minimumNumberOfCustomers.value;
+    let maximumNumberOfCustomers = event.target.maximumNumberOfCustomers.value;
+    let averageNumberOfCookies = event.target.avgPerCustHourly.value;
+
+    let newShop = new Place(shopName,minimumNumberOfCustomers,maximumNumberOfCustomers,averageNumberOfCookies);
+    let tableLeg = tableEl.rows.length-1;
+    tableEl.deleteRow(tableLeg);
+    newShop.getRandom(minimumNumberOfCustomers,maximumNumberOfCustomers);
+
+    newShop.gen();
+    newShop.render();
+    createTableFooter();
+
+
+}
 
 let Seattle = new Place('Seattle',23,65,6.3);
 Seattle.getRandom(3,65);
