@@ -120,8 +120,14 @@ function addShop(event){
     let averageNumberOfCookies = event.target.avgPerCustHourly.value;
 
     let newShop = new Place(shopName,minimumNumberOfCustomers,maximumNumberOfCustomers,averageNumberOfCookies);
+
+
+
     let tableLeg = tableEl.rows.length-1;
     tableEl.deleteRow(tableLeg);
+
+
+    
     newShop.getRandom(minimumNumberOfCustomers,maximumNumberOfCustomers);
 
     newShop.gen();
