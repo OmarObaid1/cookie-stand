@@ -1,31 +1,44 @@
 * {
   font-family: Arial, sans-serif;
+  font-family: Arial, Helvetica, sans-serif;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
-td th table {
+ td th table {
   border: 1px solid black;
   text-align: center;
-}
+  
+} 
 table,th,td{border: 1px solid gray;
-  color:darkred;
-  text-align: center;
+  color:black;
+  margin-left: auto;
+  margin-right: auto;
+  background-color:lightsalmon;
+  margin-bottom: 20px;
 
 }
 
 body{
-    background-color: rgba(6, 31, 255, 0);
+    background-image: url('https://cdn.staticaly.com/img/i2.wp.com/previews.123rf.com/images/9dreamstudio/9dreamstudio1710/9dreamstudio171003209/89622879-prediction-in-fortune-cookie-on-white-background-flat-lay-mockup.jpg');
 }
 button{
     background-color: lightgrey;
 }
 h2{
-    background-color:lightgrey;
+    background-color:brown;
     padding: 20px;
-  font-size: 25px;
+    font-size: x-large;
+    text-align: center;
+    color:lightgrey;
 }
 
 body header{
-background-color: lightblue;
-text-align: center
+color: peru;
+text-decoration: none;
+text-align: left;
+
+
+
 }
 main{
 text-align: center;
@@ -33,6 +46,35 @@ text-align: center;
 
 
 footer {
-background-color: lightblue;
+
 text-align: center
+}
+
+#pic{
+  border-radius: 1000px;
+}
+
+#pic2{
+  border-radius: 1000px;
+}
+#pic3{
+  border-radius: 1000px;
+}
+#pic4{
+  border-radius: 1000px;
+  
+}
+#pic5{
+  border-radius: 1000px;
+  margin-left: 120px;
+}
+#pic6{
+  border-radius: 1000px;
+  margin-left: 120px ;
+  
+}
+#par{
+  font-size: x-large;
+  background-color: lightsalmon;
+  font-style: italic;
 }
